@@ -1,0 +1,16 @@
+<p>lista-cats-component works!</p>
+
+<div class="cat-container" *ngFor="let cat of cats">
+    <div class="cat-card">
+      <img [src]="cat.imagem" alt="{{ cat.nome }} Image" class="cat-image" />
+      <div class="cat-details">
+        <h2>{{ cat.nome }}</h2>
+        <p><strong>ID:</strong> {{ cat.ID }}</p>
+        <p><strong>Origem:</strong> {{ cat.origem }}</p>
+        <p><strong>Temperamento:</strong> {{ cat.temperamento }}</p>
+        <p><strong>Cores:</strong> {{ cat.cores }}</p>
+        <p><strong>Descrição:</strong> {{ cat.descricao }}</p>
+      </div>
+    </div>
+  </div>
+  
